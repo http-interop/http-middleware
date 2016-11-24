@@ -8,11 +8,11 @@ use Psr\Http\Message\ResponseInterface;
 interface DelegateInterface
 {
     /**
-     * Dispatch the next available middleware and return the response.
+     * Process a request and return the response.
      *
      * @param RequestInterface $request
      *
      * @return ResponseInterface
      */
-    public function process(RequestInterface $request);
+    public function __invoke(RequestInterface $request);
 }
