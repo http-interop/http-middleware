@@ -9,7 +9,7 @@ interface ServerMiddlewareInterface
 {
     /**
      * Process an incoming server request and return a response, optionally delegating
-     * the response utilizing $delegate.
+     * the request utilizing $delegate.
      *
      * @param ServerRequestInterface     $request
      * @param DelegateInterface|callable $delegate
