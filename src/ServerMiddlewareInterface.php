@@ -9,12 +9,12 @@ interface ServerMiddlewareInterface
 {
     /**
      * Process an incoming server request and return a response, optionally delegating
-     * to the next middleware component to create the response.
+     * the request utilizing $delegate.
      *
-     * @param ServerRequestInterface $request
-     * @param DelegateInterface $delegate
+     * @param ServerRequestInterface     $request
+     * @param DelegateInterface|callable $delegate
      *
      * @return ResponseInterface
      */
-    public function process(ServerRequestInterface $request, DelegateInterface $delegate);
+    public function __invoke(ServerRequestInterface $request, callable $delegate);
 }
