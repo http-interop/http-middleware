@@ -5,14 +5,14 @@ namespace Interop\Http\Middleware;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-interface DelegateInterface
+interface RequestHandlerInterface
 {
     /**
-     * Dispatch the next available middleware and return the response.
+     * Process an incoming server request and return the response.
      *
      * @param ServerRequestInterface $request
      *
      * @return ResponseInterface
      */
-    public function process(ServerRequestInterface $request);
+    public function __invoke(ServerRequestInterface $request);
 }
