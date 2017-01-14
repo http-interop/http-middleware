@@ -189,7 +189,7 @@ significant issues regarding implementation.
 
 The most severe is that passing an empty response has no guarantees that the
 response is in a usable state. This is further exacerbated by the fact that a
-middleware may modify the response before passing it for further dispatching.
+middleware may modify the response before passing it for further processing.
 
 Further compounding the problem is that there is no way to ensure that the
 response body has not been written to, which can lead to incomplete output or
