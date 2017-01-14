@@ -263,9 +263,9 @@ additional information._
 
 ### 5.2 Delegate Design
 
-The `DelegateInterface` defines a single method that accepts a request and
-returns a response. The delegate interface must be implemented by any middleware
-dispatcher that uses middleware implementing `MiddlewareInterface`.
+A delegates is a representative of the middleware dispatcher, whose only purpose
+is to encapsulate the remaining request processing. The `DelegateInterface` defines a
+`process` method therefor, which accepts a request and returns a response.
 
 #### Why isn't the delegate a `callable`?
 
@@ -278,8 +278,6 @@ additional information._
 
 Both the middleware and delegate interface define a `process` method to prevent
 misuse of middleware as delegates.
-
-The implementation of delegate should be defined within middleware dispatching systems.
 
 6. People
 ---------
