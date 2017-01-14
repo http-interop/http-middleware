@@ -246,7 +246,7 @@ To make it clear that the middleware can only be used in a synchronous, server
 side context.
 
 While not all middleware will need to use the additional methods defined by the
-server request interface, external requests are typically handled asynchronously
+server request interface, external requests are typically processed asynchronously
 and would need to return a [promise][promises] of a response. (This is primarily
 due to the fact that multiple requests can be made in parallel and processed as
 they are returned.) It is outside the scope of this proposal to address the needs
