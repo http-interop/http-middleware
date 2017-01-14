@@ -236,10 +236,6 @@ request and a delegate and must return a response. The middleware may:
 Doing so would conflict with existing middleware that implements the double-pass
 approach and may want to implement the middleware interface.
 
-In addition, classes that define `__invoke` can be type hinted as `callable`,
-which results in less strict typing. This is generally undesirable, especially
-when the `__invoke` method uses strict typing.
-
 #### Why is a server request required?
 
 To make it clear that the middleware can only be used in a synchronous, server
