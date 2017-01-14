@@ -225,8 +225,7 @@ being passed implements a middleware signature, which reduces runtime safety.
 The `ServerMiddlewareInterface` defines a single method that accepts a server
 request and a delegate and must return a response. The middleware may:
 
-- Evolve the request before passing it to the delegate to dispatch the next
-  available middleware.
+- Evolve the request before passing it to the delegate to create the response.
 - Evolve the response received from the delegate before returning it.
 - Create and return a response without passing it to the delegate, thereby
   preventing any further middleware from dispatching.
