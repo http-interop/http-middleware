@@ -8,7 +8,7 @@ use Psr\Http\Message\ServerRequestInterface;
 interface DelegateInterface
 {
     /**
-     * Dispatch the next available middleware and return the response.
+     * Process an incoming server request and return the response.
      *
      * @param ServerRequestInterface $request
      *

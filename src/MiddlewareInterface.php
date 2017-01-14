@@ -9,7 +9,7 @@ interface MiddlewareInterface
 {
     /**
      * Process an incoming server request and return a response, optionally delegating
-     * to the next middleware component to create the response.
+     * to the next request processor to create the response.
      *
      * @param ServerRequestInterface $request
      * @param DelegateInterface $delegate
