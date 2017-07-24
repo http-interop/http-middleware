@@ -5,10 +5,10 @@ namespace Interop\Http\ServerMiddleware;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-interface DelegateInterface
+interface HandlerInterface
 {
     /**
-     * Dispatch the next available middleware and return the response.
+     * Handle the request and return a response.
      *
      * @param ServerRequestInterface $request
      *
