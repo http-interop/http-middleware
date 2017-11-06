@@ -1,6 +1,6 @@
 {
     "name": "http-interop/http-middleware",
-    "description": "Common interface for HTTP server-side middleware",
+    "description": "Common interface for HTTP server request handlers",
     "keywords": [
         "psr",
         "psr-7",
@@ -8,7 +8,8 @@
         "http",
         "middleware",
         "request",
-        "response"
+        "response",
+        "handlers"
     ],
     "license": "MIT",
     "authors": [
